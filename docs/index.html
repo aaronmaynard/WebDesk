@@ -12,6 +12,8 @@
     CONTAINER ============================================================== CONTAINER
     Insert all items below.  Insert a comment description to the right your section.
     -->
+    <div w3-include-html="modules/template/template.html"></div> <!-- TEMPLATE -->
+    <div w3-include-html="modules/calculator/calculator.html"></div> <!-- CALCULATOR -->
     <div w3-include-html="desktop/desktop.html"></div> <!-- DESKTOP -->
 	
 	
@@ -22,10 +24,12 @@
     <!-- Script used to implement components in a modular style. -->
     <script>w3.includeHTML();</script>
     <!--
-	Insert all script dependencies below.  Insert a comment header above your section.
-    -->
-	
-	
+		Insert all script dependencies below.  Insert a comment header above your section.
+    -->	  
+		<script src="modules/template/template.js"></script> <!-- Template -->
+		<script src="modules/template/template.js"></script> 
+		<script src="modules/calculator/calculator.js"></script> <!-- Calculator -->
+		<script src="modules/calculator/calculator.js"></script>
 	
   </body>
   <script>
