@@ -10,6 +10,16 @@ with the name of your application in both template.js and in the styling of temp
 
 /* ============================== INSERT CODE ABOVE THIS LINE ==============================*/
 
+function toggleApplication() {
+  var div = document.getElementById("application");
+  if (div.style.display == "none") {
+    div.style.display = "block";
+  }
+  else {
+    div.style.display = "none";
+  }
+}
+
 //Make the DIV element draggagle:
 dragElement(document.getElementById(("application")));
 
