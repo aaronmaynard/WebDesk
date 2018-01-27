@@ -88,6 +88,7 @@ input[type=text] {
     z-index: 9;
     text-align: center;
     border: 0px solid #d3d3d3;
+    display: none;
 }
 
 #applicationheader {
@@ -109,12 +110,12 @@ input[type=text] {
 	height: 400px;
 }
 </style>
-
+<script src="template.js"></script>   
 <div class="applicationcontainer" id="application">
 	<div class="row" id="applicationheader">
 		<div class="column left">
-			<span class="dot" style="background:#ED594A;"></span>
-			<span class="dot" style="background:#FDD800;"></span>
+			<button class="dot" style="background:#ED594A;" onclick="toggleApplication()"></button>
+			<button class="dot" style="background:#FDD800;" onclick="toggleApplication()"></button>
 		</div>
 		<div class="column middle">
 			<span style="color:black">Application Name</span>
@@ -129,6 +130,8 @@ input[type=text] {
 	</div>
 	<div class="applicationcontent">
 		<iframe height="100%" width="100%" src="modules/template/core.html"></iframe>
-    <!-- insert the src content relative to the source directory -->
 	</div>
 </div>
+<script>
+	dragElement(document.getElementById(("application")));
+</script>
