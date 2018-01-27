@@ -1,3 +1,8 @@
+<!--
+WEBDESK TEMPLATE.JS
+This template is to be used with the application you build. Be sure to change "application"
+with the name of your application in both template.js and in the styling of template.html
+-->
 <style>
 body {
     font-family: Arial
@@ -9,7 +14,6 @@ body {
 
 /* The application window */
 .calculatorcontainer {
-    border: 3px solid #f1f1f1;
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
 	padding: 0 0 0 0;
@@ -83,6 +87,7 @@ input[type=text] {
     z-index: 9;
     text-align: center;
     border: 0px solid #d3d3d3;
+    display: none;
 }
 
 #calculatorheader {
@@ -96,16 +101,16 @@ input[type=text] {
 .calculatorcontent {
     padding: 0px;
     background-color: grey;
-	width: 305px;
+	width: 306px;
 	height: 456px;
 }
 </style>
-
-<div class="applicationcontainer" id="calculator">
+<script src="calculator.js"></script>
+<div class="calculatorcontainer" id="calculator">
 	<div class="row" id="calculatorheader">
 		<div class="column left">
-			<span class="dot" style="background:#ED594A;"></span>
-			<span class="dot" style="background:#FDD800;"></span>
+			<button class="dot" style="background:#ED594A;" onclick="toggleCalculator()">
+			<button class="dot" style="background:#FDD800;" onclick="toggleCalculator()">
 		</div>
 		<div class="column middle">
 			<span style="color:black">Calculator</span>
@@ -122,3 +127,6 @@ input[type=text] {
 		<iframe height="100%" width="100%" src="modules/calculator/core.html"></iframe>
 	</div>
 </div>
+<script>
+	dragElement(document.getElementById(("calculator")));
+</script>
