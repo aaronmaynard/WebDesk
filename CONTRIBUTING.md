@@ -53,7 +53,7 @@ We have a Discord server where the community chimes in with helpful advice if yo
 
 This section guides you through submitting a bug report for WebDesk. Following these guidelines helps maintainers and the community understand your report :pencil:, reproduce the behavior :computer: :computer:, and find related reports :mag_right:.
 
- When you are creating an issue report, please [include as many details as possible](#how-do-i-submit-a-good-bug-report). Fill out [the required template](), the information it asks for helps us resolve issues faster.
+ When you are creating an issue report, please [include as many details as possible](#sir). Fill out [the required template](issue-template), the information it asks for helps us resolve issues faster.
 
 > **Note:** If you find a **Closed** issue that seems like it is the same thing that you're experiencing, open a new issue and include a link to the original issue in the body of your new one.
 
