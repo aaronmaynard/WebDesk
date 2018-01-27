@@ -7,7 +7,7 @@ The following is a set of guidelines for contributing to WebDesk, which are host
 #### Table Of Contents
 
 1. [Code of Conduct](#coc)
-2. [Too Long, Didn't Read](#tldr)
+2. [I don't want to read this whole thing I just have a question!!!](#tldr)
 3. [How Can I Contribute](#hcic)  
   a) [Reporting Issues](#ri)  
   b) [Submitting a (good) Issue Report](#sir)  
@@ -40,7 +40,7 @@ This project and everyone participating in it is governed by the [WebDesk Code o
 
 We have a Discord server where the community chimes in with helpful advice if you have questions.
 
-* [Access the Discord Server](https://discord.gg/GhUnXeY)
+* [Access the Discord Server][discord]
     * There are many other channels available, check the channel list
 
 <div id='hcic'/>
@@ -98,10 +98,11 @@ Before creating enhancement suggestions, Perform a [cursory search][search-enhan
 
 ### Your First Code Contribution
 
-Unsure where to begin contributing to WebDesk? You can start by looking through these `beginner` and `help-wanted` issues:
+Unsure where to begin contributing to WebDesk? You can start by looking through these `good first issue`, `beginner` and `help-wanted` issues:
 
+* [Good First Issue issues][good-first-issue] - issues which should be save for those who are just getting into the open-source community, or have yet to assist in the project.
 * [Beginner issues][beginner] - issues which should only require a few lines of code, and a test or two.
-* [Help wanted issues][help-wanted] - issues which should be a bit more involved than `beginner` issues.
+* [Help Wanted issues][help-wanted] - issues which should be a bit more involved than `beginner` issues.
 
 Both issue lists are sorted by total number of comments. While not perfect, number of comments is a reasonable proxy for impact a given change will have.
 
@@ -205,13 +206,14 @@ The labels are loosely grouped by their purpose, but it's not required that ever
 We appreciate your effort in taking the time to work on this issue and help out the open source community.
 If you need any help, feel free to ask below. We are always happy to help 😄
 
-[profile]:
-[CoC]:
-[discord]:
-[issue-template]:
-[search-enhancement]:
-[beginner]:
-[help-wanted]:
-[pull-template]:
+[profile]:https://github.com/aaronmaynard
+[CoC]:CODE_OF_CONDUCT.md
+[discord]:https://discord.gg/GhUnXeY
+[issue-template]:ISSUE_TEMPLATE.md
+[search-enhancement]:https://github.com/aaronmaynard/WebDesk/search?q=is%3Aissue+is%3Aopen+label%3A%22enhancement%22+&type=Issues&utf8=%E2%9C%93
+[beginner]:https://github.com/aaronmaynard/WebDesk/search?q=is%3Aissue+is%3Aopen+label%3A%22beginner%22+&type=Issues&utf8=%E2%9C%93
+[good-first-issue]:https://github.com/aaronmaynard/WebDesk/search?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22+&type=Issues&utf8=%E2%9C%93
+[help-wanted]:https://github.com/aaronmaynard/WebDesk/search?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22+&type=Issues&utf8=%E2%9C%93
+[pull-template]:PULL_REQUEST_TEMPLATE.md
 [JSS]:https://standardjs.com/
 [MarkdownLink]:https://daringfireball.net/projects/markdown
