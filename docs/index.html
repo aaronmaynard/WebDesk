@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>WebDesk - The Virtual Desktop</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+  </head>
+
+  <body>
+    <!--
+    CONTAINER ============================================================== CONTAINER
+    Insert all items below.  Insert a comment description to the right your section.
+    -->
+	
+	
+    
+    <!--
+    SCRIPTS ================================================================== SCRIPTS
+    -->
+    <!-- Script used to implement components in a modular style. -->
+    <script>w3.includeHTML();</script>
+    <!--
+	Insert all script dependencies below.  Insert a comment header above your section.
+    -->
+	
+	
+	
+  </body>
+  <script>
+    (function() {
+      var highest = 1;
+      $.fn.bringToTop = function() {
+        this.css('z-index', ++highest); // increase highest by 1 and set the style
+      };
+    })();
+    $(document).ready(function(){
+      $("div").click(function(){
+        $(this).bringToTop();
+      });
+    });
+  </script>
+</html>
