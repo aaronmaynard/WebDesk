@@ -1,9 +1,31 @@
+/*
+WEBDESK TEMPLATE.JS
+This template is to be used with the calculator you build. Be sure to change "calculator"
+with the name of your calculator in both template.js and in the styling of template.html
+*/
+
+
+
+
+
+/* ============================== INSERT CODE ABOVE THIS LINE ==============================*/
+
+function toggleCalculator() {
+  var div = document.getElementById("calculator");
+  if (div.style.display == "none") {
+    div.style.display = "block";
+  }
+  else {
+    div.style.display = "none";
+  }
+}
+
 //Make the DIV element draggagle:
 dragElement(document.getElementById(("calculator")));
 
 function dragElement(elmnt) {
   var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
-  if (document.getElementById(elmnt.id + "calculatorheader")) {
+  if (document.getElementById(elmnt.id + "header")) {
     /* if present, the header is where you move the DIV from:*/
     document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
   } else {
