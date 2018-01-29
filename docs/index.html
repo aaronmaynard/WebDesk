@@ -3,7 +3,6 @@
   <head>
     <title>WebDesk - The Virtual Desktop</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://www.w3schools.com/lib/w3.js"></script>
   </head>
 
@@ -15,9 +14,7 @@
     <div w3-include-html="modules/template/template.html"></div> <!-- TEMPLATE -->
     <div w3-include-html="modules/calculator/calculator.html"></div> <!-- CALCULATOR -->
     <div w3-include-html="desktop/desktop.html"></div> <!-- DESKTOP -->
-	
-	
-    
+	  
     <!--
     SCRIPTS ================================================================== SCRIPTS
     -->
@@ -26,23 +23,5 @@
     <!--
 		Insert all script dependencies below.  Insert a comment header above your section.
     -->	  
-		<script src="modules/template/template.js"></script> <!-- Template -->
-		<script src="modules/template/template.js"></script> 
-		<script src="modules/calculator/calculator.js"></script> <!-- Calculator -->
-		<script src="modules/calculator/calculator.js"></script>
 	
   </body>
-  <script>
-    (function() {
-      var highest = 1;
-      $.fn.bringToTop = function() {
-        this.css('z-index', ++highest); // increase highest by 1 and set the style
-      };
-    })();
-    $(document).ready(function(){
-      $("div").click(function(){
-        $(this).bringToTop();
-      });
-    });
-  </script>
-</html>
