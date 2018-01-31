@@ -1,0 +1,187 @@
+ 
+/* Calculator */
+ #calculator {
+     top: 45px;
+     width: 300px;
+     height: 450px;
+     flex: 0 0 auto;
+     justify-content: space-around;
+     display: flex;
+     flex-flow: row wrap;
+     -webkit-touch-callout: none;
+    /* iOS Safari */
+     -webkit-user-select: none;
+    /* Chrome/Safari/Opera */
+     -khtml-user-select: none;
+    /* Konqueror */
+     -moz-user-select: none;
+    /* Firefox */
+     -ms-user-select: none;
+    /* Internet Explorer/Edge */
+     user-select: none;
+    /* Non-prefixed version, currently not supported by any browser */
+    /*TODO not pretty*/
+}
+ #total {
+     height: 77px;
+     width: 100%;
+     margin: auto;
+     background-color: black;
+     display: flex;
+     flex-flow: row wrap;
+     color:white;
+}
+ #display {
+     float: left;
+     width: 225px;
+     height: 77px;
+     text-align: right;
+     display: flex;
+     flex-flow: column nowrap;
+     align-items: flex-end;
+}
+ #screen {
+     flex-basis: 45px;
+     font-size: 26px;
+     margin-top: 20px;
+}
+ #result {
+     flex-basis: 20px;
+}
+ #clear {
+     float: right;
+     height: 78px;
+}
+ #keyboard {
+     height: 375px;
+     width: 300px;
+     background-color: green;
+     text-align: right;
+}
+ .keyCalculator {
+     display: inline;
+     height: 75px;
+     width: 75px;
+     border: 1px solid #D6D7D7;
+     background-color: light-grey;
+     float: left;
+     text-align: center;
+     cursor: pointer;
+     font-size: 40px;
+}
+ #equals {
+     width: 148px;
+     background-color: orange;
+}
+ #nroot {
+     display: inline;
+     font-size: 30px;
+     top: -5px;
+}
+ .clearsCalculator {
+     background-color: darkgrey;
+}
+ .operatorsCalculator {
+     background-color: orange;
+}
+/* Calculator On Hover Effects */
+ button:hover, button.hover{
+     background-color: lightgrey;
+}
+ #equals:hover, #equals.hover{
+     background-color: royalblue;
+}
+ .operatorsCalculator:hover, .operatorsCalculator.hover{
+     background-color: lightskyblue;
+}
+ .clearsCalculator:hover, .clearsCalculator.hover{
+     background-color: salmon;
+}
+ body {
+     font-family: Arial 
+}
+ * {
+     box-sizing: border-box;
+}
+/* The application window */
+ .calculatorcontainer {
+     border-top-left-radius: 4px;
+     border-top-right-radius: 4px;
+     padding: 0 0 0 0;
+     z-index: 0;
+}
+/* Container for columns and the top "toolbarCalculator" */
+ .rowCalculator {
+     padding: 0px;
+     background: #f1f1f1;
+     border-top-left-radius: 4px;
+     border-top-right-radius: 4px;
+}
+/* Create three unequal columns that floats next to each other */
+ .columnCalculator {
+     float: left;
+}
+ .leftCalculator {
+     width: 15%;
+}
+ .rightCalculator {
+     width: 10%;
+}
+ .middleCalculator {
+     width: 75%;
+}
+/* Clear floats after the columns */
+ .rowCalculator:after {
+     content: "";
+     display: table;
+     clear: both;
+}
+/* Three dotCalculators */
+ .dotCalculator {
+     margin-top: 4px;
+     height: 12px;
+     width: 12px;
+     background-color: #bbb;
+     border-radius: 50%;
+     display: inline-block;
+}
+/* Style the input field */
+ input[type=text] {
+     width: 100%;
+     border-radius: 3px;
+     border: none;
+     background-color: white;
+     margin-top: -8px;
+     height: 25px;
+     color: #666;
+     padding: 5px;
+}
+/* Three barCalculators (hamburger menu) */
+ .barCalculator {
+     width: 17px;
+     height: 3px;
+     background-color: #aaa;
+     margin: 3px 0;
+     display: block;
+}
+ #calculator {
+     position: absolute;
+     z-index: 0;
+     text-align: center;
+     border: 0px solid #d3d3d3;
+     display: block;
+}
+ #calculatorheader {
+     padding: 10px;
+     cursor: move;
+     z-index: 10;
+     background-color: #f1f1f1;
+     color: #fff;
+}
+/* Page content */
+ .calculatorcontent {
+     padding: 0px;
+     background-color: grey;
+     width: 300px;
+     height: 450px;
+}
