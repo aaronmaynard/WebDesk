@@ -1,24 +1,26 @@
-<link rel="stylesheet" type="text/css" href="style.css">
-
-<script src="template.js"></script>
-<div class="applicationcontainer" id="application">
-    <div class="row" id="applicationheader">
-        <div class="column left">
-            <button class="dot" style="background:#ED594A;" onclick="toggleApplication()"></button>
-            <button class="dot" style="background:#FDD800;" onclick="toggleApplication()"></button>
-        </div>
-        <div class="column middle">
-            <span style="color:black">Application Name</span>
-        </div>
-        <div class="column right">
-            <div style="float:right">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-        </div>
-    </div>
-    <div class="applicationcontent">
-        Insert your application here
-    </div>
+<div class="application" id="template">
+	<div class="row" id="templateheader">
+		<div class="column left">
+			<button class="dot" style="background:#ED594A;" onclick="toggleTemplate()">
+			<button class="dot" style="background:#FDD800;" onclick="toggleTemplate()">
+		</div>
+		<div class="column middle">
+			<span style="color:black">Template
+			</span>
+		</div>
+		<div class="column right">
+			<div style="float:right">
+				<span class="bar">
+				</span>
+				<span class="bar">
+				</span>
+				<span class="bar">
+				</span>
+			</div>
+		</div>
+	</div>
+	<div class="templatecontent">
+		<!-- This is where you place your core application -->
+		<iframe src="someURL" frameborder="0" id='inneriframe' scrolling=no></iframe>
+	</div>
 </div>
