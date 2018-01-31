@@ -1,0 +1,116 @@
+#calculator {
+	width: 300px;
+	height: 450px;
+	display: none;
+}
+
+#calculatorheader {
+	padding: 10px;
+	cursor: move;
+	z-index: 10;
+	background-color: #f1f1f1;
+	color: #fff;
+}
+
+#total {
+	height: 77px;
+	width: 100%;
+	margin: auto;
+	background-color: black;
+	display: flex;
+	flex-flow: row wrap;
+	color: white;
+}
+
+#display {
+	float: left;
+	width: 225px;
+	height: 77px;
+	text-align: right;
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: flex-end;
+}
+
+#screen {
+	flex-basis: 45px;
+	font-size: 26px;
+	margin-top: 20px;
+}
+
+#result {
+	flex-basis: 20px;
+}
+
+#clear {
+	float: right;
+	height: 78px;
+}
+
+#keyboard {
+	height: 375px;
+	width: 300px;
+	background-color: green;
+	text-align: right;
+}
+
+.key {
+	display: inline;
+	height: 75px;
+	width: 75px;
+	border: 1px solid #D6D7D7;
+	background-color: light-grey;
+	float: left;
+	text-align: center;
+	cursor: pointer;
+	font-size: 40px;
+}
+
+#equals {
+	width: 148px;
+	background-color: orange;
+}
+
+#nroot {
+	display: inline;
+	font-size: 30px;
+	top: -5px;
+}
+
+.clears {
+	background-color: darkgrey;
+}
+
+.operators {
+	background-color: orange;
+}
+
+
+/* Calculator On Hover Effects */
+
+button:hover,
+button.hover {
+	background-color: lightgrey;
+}
+
+#equals:hover,
+#equals.hover {
+	background-color: royalblue;
+}
+
+.operators:hover,
+.operators.hover {
+	background-color: lightskyblue;
+}
+
+.clears:hover,
+.clears.hover {
+	background-color: salmon;
+}
+
+
+/* Page content */
+
+.calculatorcontent {
+	padding: 0px;
+}
