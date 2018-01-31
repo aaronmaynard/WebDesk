@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>WebDesk - The Virtual Desktop
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/xhtml; charset=UTF-8" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="desktop/style.css">
+    <link rel="stylesheet" type="text/css" href="modules/calculator/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Open+Sans|Rubik+One" rel="stylesheet">
+    <script src="https://www.w3schools.com/lib/w3.js">
+    </script>
+</head>
+
+<body>
+    <div class="modules">
+        <!--===================================== ADD MODULE ITEMS BELOW =====================================-->
+        <div class="calculatorcontainer" id="calculator" style="display: none;">
+            <div class="rowCalculator" id="calculatorheader">
+                <div class="columnCalculator leftCalculator">
+                    <button class="dotCalculator" style="background:#ED594A;" onclick="toggleCalculator()">
+              <button class="dotCalculator" style="background:#FDD800;" onclick="toggleCalculator()">
+                </div>
+              <div class="columnCalculator middleCalculator">
+                <span style="color:black">Calculator
+                </span>
+              </div>
+              <div class="columnCalculator rightCalculator">
+                <div style="float:right">
+                  <span class="barCalculator">
+                  </span>
+                  <span class="barCalculator">
+                  </span>
+                  <span class="barCalculator">
+                  </span>
+                </div>
+              </div>
+              </div>
+            <div class="calculatorcontent">
+              <main id="calculator">
+                <div id="total">
+                  <div id="display" role="main" aria-live="assertive">
+                    <div id="screen">
+                    </div>
+                    <div id="result">
+                    </div>
+                  </div>
+                  <button aria-label="backspace" class="keyCalculator clearsCalculator" id="clear">&lt;
+                  </button>
+                </div>
+                <div id="keyboard">
+                    <button aria-label="clear all" class="keyCalculator clearsCalculator" id="clearall">AC
+                  </button>
+                    <button class="keyCalculator operatorsCalculator" id="percent">%
+                  </button>
+                    <button aria-label="nth root" class="keyCalculator operatorsCalculator" id="nroot">√
+                  </button>
+                    <button class="keyCalculator operatorsCalculator">+
+                  </button>
+                    <button class="keyCalculator">7
+                  </button>
+                    <button class="keyCalculator">8
+                  </button>
+                    <button class="keyCalculator">9
+                  </button>
+                    <button aria-label="minus" class="keyCalculator operatorsCalculator">-
+                  </button>
+                    <button class="keyCalculator">4
+                  </button>
+                    <button class="keyCalculator">5
+                  </button>
+                    <button class="keyCalculator">6
+                  </button>
+                    <button class="keyCalculator operatorsCalculator">&divide;
+                  </button>
+                    <button class="keyCalculator">1
+                  </button>
+                    <button class="keyCalculator">2
+                  </button>
+                    <button class="keyCalculator">3
+                  </button>
+                    <button class="keyCalculator operatorsCalculator">&times;
+                  </button>
+                    <button class="keyCalculator">0
+                  </button>
+                    <button aria-label="decimal point" class="keyCalculator" id="decimal">.
+                  </button>
+                    <button class="keyCalculator operatorsCalculator" id="equals">=
+                  </button>
+                </div>
+                </main>
+            </div>
+        </div>
+        <!--===================================== ADD MODULE ITEMS ABOVE =====================================-->
+    </div>
+    <div class="desktop">
+        <!--===================================== ADD DESKTOP ITEMS BELOW =====================================-->
+        <div id="columnsDesktop" style="width: 300px;">
+            <div class="columnDesktop" draggable="true">
+                <img src="http://icons.iconarchive.com/icons/oxygen-icons.org/oxygen/96/Apps-accessories-calculator-icon.png" title="Calculator" onclick="toggleCalculator()">Calculator
+            </div>
+            <div class="columnDesktop" draggable="true">
+                <img src="http://icons.iconarchive.com/icons/oxygen-icons.org/oxygen/96/Apps-preferences-plugin-script-icon.png" title="Bash" onclick="">Bash
+            </div>
+            <div class="columnDesktop" draggable="true">
+                <img src="http://icons.iconarchive.com/icons/oxygen-icons.org/oxygen/96/Apps-kplato-icon.png" title="Calendar" onclick="">Calendar
+            </div>
+            <div class="columnDesktop" draggable="true">
+                <img src="http://icons.iconarchive.com/icons/oxygen-icons.org/oxygen/96/Actions-tool-animator-icon.png" title="Video" onclick="">Video File
+            </div>
+            <div class="columnDesktop" draggable="true">
+                <img src="http://icons.iconarchive.com/icons/oxygen-icons.org/oxygen/96/Categories-applications-internet-icon.png" title="Internet" onclick="">Browser
+            </div>
+            <div class="columnDesktop" draggable="true">
+                <img src="http://icons.iconarchive.com/icons/oxygen-icons.org/oxygen/96/Devices-secure-card-icon.png" title="Contact" onclick="">Contact
+            </div>
+            <div class="columnDesktop" draggable="true">
+                <img src="http://icons.iconarchive.com/icons/oxygen-icons.org/oxygen/96/Apps-inkscape-icon.png" title="Image Editor" onclick="">Image Editor
+            </div>
+        </div>
+        <!--===================================== ADD DESKTOP ITEMS ABOVE =====================================-->
+    </div>
+    <div class="taskbar">
+        <!--===================================== ADD TASKBAR ITEMS BELOW =====================================-->
+        <div class="w3-bottom w3-bar w3-black w3-large">
+            <button title="Start Menu" onclick="#" class="w3-bar-item w3-button w3-green">
+              <i class="fa fa-home">
+              </i>
+            </button>
+            <button title="Internet" onclick="#" class="w3-bar-item w3-button">
+              <i class="fa fa-globe">
+              </i>
+            </button>
+            <button title="Files" onclick="#" class="w3-bar-item w3-button">
+              <i class="fa fa-folder-open">
+              </i>
+            </button>
+            <button title="Calculator" onclick="toggleCalculator()" class="w3-bar-item w3-button">
+              <i class="fa fa-calculator">
+              </i>
+            </button>
+            <button title="Mail" onclick="#" class="w3-bar-item w3-button">
+              <i class="fa fa-envelope">
+              </i>
+            </button>
+            <button title="Music" onclick="#" class="w3-bar-item w3-button">
+              <i class="fa fa-music">
+              </i>
+            </button>
+            <center>Made with
+                <a href="https://www.w3schools.com/html/" target="_blank" style="font-size:20px" class="fa">&#xf13b;
+              </a> and
+                <a href="https://www.w3schools.com/css/" target="_blank" style="font-size:20px" class="fa">&#xf13c;
+              </a> on
+                <a href="https://github.com/aaronmaynard/WebDesk" target="_blank" style="font-size:20px" class="fa">&#xf09b;
+              </a>
+                <button title="Log Off" onclick="#" class="w3-bar-item w3-button w3-right">
+                <i class="fa fa-sign-in">
+                </i>
+              </button>
+                <button title="WiFi" onclick="#" class="w3-bar-item w3-button w3-right">
+                <i class="fa fa-wifi">
+                </i>
+              </button>
+                <button title="Volume" onclick="#" class="w3-bar-item w3-button w3-right">
+                <i class="fa fa-volume-up">
+                </i>
+              </button>
+                <button title="Battery" onclick="#" class="w3-bar-item w3-button w3-right">
+                <i class="fa fa-battery-3">
+                </i>
+              </button>
+        </div>
+        <!--===================================== ADD TASKBAR ITEMS ABOVE =====================================-->
+    </div>
+</body>
+<!--===================================== ADD SCRIPT DEPENDENCIES BELOW=====================================-->
+<script>
+    w3.includeHTML();
+</script>
+<script src="desktop/desktop.js">
+</script>
+<script src="modules/calculator/calculator.js">
+</script>
+
+</html>
+	    
