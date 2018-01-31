@@ -4,8 +4,8 @@ This template is to be used with the application you build. Be sure to change "a
 with the name of your application in both template.js and in the styling of template.html
 */
 /* ============================== INSERT CODE ABOVE THIS LINE ==============================*/
-function toggleApplication() {
-	var div = document.getElementById("application");
+function toggleTemplate() {
+	var div = document.getElementById("template");
 	if (div.style.display == "none") {
 		div.style.display = "block";
 	} else {
@@ -14,7 +14,7 @@ function toggleApplication() {
 }
 
 //Make the DIV element draggagle:
-dragElement(document.getElementById(("application")));
+dragElement(document.getElementById(("template")));
 
 function dragElement(elmnt) {
 	var pos1 = 0,
