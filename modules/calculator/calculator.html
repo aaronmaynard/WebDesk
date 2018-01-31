@@ -1,64 +1,52 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html lang="en" xml:lang="en">
-
-<head>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Open+Sans|Rubik+One" rel="stylesheet">
-    <meta http-equiv="Content-Type" content="text/xhtml; charset=UTF-8" />
-</head>
-<div class="calculatorcontainer" id="calculator">
-    <div class="rowCalculator" id="calculatorheader">
-        <div class="columnCalculator leftCalculator">
-            <button class="dotCalculator" style="background:#ED594A;" onclick="toggleCalculator()">
-			<button class="dotCalculator" style="background:#FDD800;" onclick="toggleCalculator()">
+<div class="application" id="calculator">
+	<div class="row" id="calculatorheader">
+		<div class="column left">
+			<button class="dot" style="background:#ED594A;" onclick="toggleCalculator()">
+			<button class="dot" style="background:#FDD800;" onclick="toggleCalculator()">
 		</div>
-		<div class="columnCalculator middleCalculator">
-			<span style="color:black">Calculator</span>
+		<div class="column middle">
+		<span style="color:black">Calculator
+		</span>
 		</div>
-		<div class="columnCalculator rightCalculator">
-			<div style="float:right">
-				<span class="barCalculator"></span>
-				<span class="barCalculator"></span>
-				<span class="barCalculator"></span>
-			</div>
+		<div class="column right">
+		<div style="float:right">
+		<span class="bar">
+		</span>
+		<span class="bar">
+		</span>
+		<span class="bar">
+		</span>
+		</div>
 		</div>
 	</div>
 	<div class="calculatorcontent">
-		<main id="calculator">
-			<div id="total">
-			  <div id="display" role="main" aria-live="assertive">
-				<div id="screen"></div>
-				<div id="result"></div>
-			  </div>
-			  <button aria-label="backspace" class="keyCalculator clearsCalculator" id="clear">&lt;</button>
-        </div>
-        <div id="keyboard">
-            <button aria-label="clear all" class="keyCalculator clearsCalculator" id="clearall">AC</button>
-            <button class="keyCalculator operatorsCalculator" id="percent">%</button>
-            <button aria-label="nth root" class="keyCalculator operatorsCalculator" id="nroot">√</button>
-            <button class="keyCalculator operatorsCalculator">+</button>
-            <button class="keyCalculator">7</button>
-            <button class="keyCalculator">8</button>
-            <button class="keyCalculator">9</button>
-            <button aria-label="minus" class="keyCalculator operatorsCalculator">-</button>
-            <button class="keyCalculator">4</button>
-            <button class="keyCalculator">5</button>
-            <button class="keyCalculator">6</button>
-            <button class="keyCalculator operatorsCalculator">&divide;</button>
-            <button class="keyCalculator">1</button>
-            <button class="keyCalculator">2</button>
-            <button class="keyCalculator">3</button>
-            <button class="keyCalculator operatorsCalculator">&times;</button>
-            <button class="keyCalculator">0</button>
-            <button aria-label="decimal point" class="keyCalculator" id="decimal">.</button>
-            <button class="keyCalculator operatorsCalculator" id="equals">=</button>
-        </div>
-        </main>
-    </div>
+	<div id="total">
+	<div id="display" role="main" aria-live="assertive">
+	<div id="screen"></div>
+	<div id="result"></div>
+	</div>
+	<button aria-label="backspace" class="key clears" id="clear">&lt;</button>
+	</div>
+	<div id="keyboard">
+	<button aria-label="clear all" class="key clears" id="clearall">AC</button>
+	<button class="key operators" id="percent">%</button>
+	<button aria-label="nth root" class="key operators" id="nroot">√</button>
+	<button class="key operators">+</button>
+	<button class="key">7</button>
+	<button class="key">8</button>
+	<button class="key">9</button>
+	<button aria-label="minus" class="key operators">-</button>
+	<button class="key">4</button>
+	<button class="key">5</button>
+	<button class="key">6</button>
+	<button class="key operators">&divide;</button>
+	<button class="key">1</button>
+	<button class="key">2</button>
+	<button class="key">3</button>
+	<button class="key operators">&times;</button>
+	<button class="key">0</button>
+	<button aria-label="decimal point" class="key" id="decimal">.</button>
+	<button class="key operators" id="equals">=</button>
+	</div>
+	</div>
 </div>
-<script>
-    dragElement(document.getElementById(("calculator")));
-</script>
-<script src="calculator.js"></script>
-
-</html>
